@@ -1,0 +1,132 @@
+/* line 3, ../../app/styles/main.scss */
+.container {
+  bottom: 0;
+  left: 0;
+  min-height: 600px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 13, ../../app/styles/main.scss */
+.player {
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+/* line 18, ../../app/styles/main.scss */
+.player div {
+  margin: o;
+  padding: 0;
+}
+/* line 19, ../../app/styles/main.scss */
+.player div div {
+  background: #A4CA39;
+  position: relative;
+}
+/* line 21, ../../app/styles/main.scss */
+.player .android {
+  height: 404px;
+  width: 334px;
+  margin: 100px auto;
+}
+/* line 26, ../../app/styles/main.scss */
+.player .head {
+  width: 220px;
+  height: 100px;
+  top: 32px;
+  border-radius: 110px 110px 0 0;
+  -moz-border-radius: 110px 110px 0 0;
+  -webkit-border-radius: 110px 110px 0 0;
+  -webkit-transition: all 0.1s ease-in;
+}
+/* line 36, ../../app/styles/main.scss */
+.player .l_eye, .player .r_eye {
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 42px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+/* line 45, ../../app/styles/main.scss */
+.player .l_eye {
+  left: 50px;
+}
+/* line 46, ../../app/styles/main.scss */
+.player .r_eye {
+  right: 50px;
+}
+/* line 48, ../../app/styles/main.scss */
+.player .l_ant, .player .r_ant {
+  width: 6px;
+  height: 50px;
+  position: absolute;
+  top: -34px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+/* line 56, ../../app/styles/main.scss */
+.player .l_ant {
+  left: 50px;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+}
+/* line 62, ../../app/styles/main.scss */
+.player .r_ant {
+  right: 50px;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+/* line 69, ../../app/styles/main.scss */
+.player .body {
+  width: 220px;
+  height: 184px;
+  top: 40px;
+  border-radius: 0 0 25px 25px;
+  -webkit-border-radius: 0 0 25px 25px;
+  -moz-border-radius: 0 0 25px 25px;
+}
+/* line 78, ../../app/styles/main.scss */
+.player .l_arm, .player .r_arm, .player .l_leg, .player .r_leg {
+  width: 50px;
+  position: absolute;
+  -webkit-transition: all 0.1s ease-in;
+}
+/* line 82, ../../app/styles/main.scss */
+.player .l_arm, .player .r_arm {
+  height: 150px;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+/* line 88, ../../app/styles/main.scss */
+.player .l_leg, .player .r_leg {
+  height: 80px;
+  top: 182px;
+  border-radius: 0 0 25px 25px;
+  -moz-border-radius: 0 0 25px 25px;
+  -webkit-border-radius: 0 0 25px 25px;
+}
+/* line 94, ../../app/styles/main.scss */
+.player .l_arm {
+  left: -58px;
+}
+/* line 95, ../../app/styles/main.scss */
+.player .r_arm {
+  right: -58px;
+}
+/* line 96, ../../app/styles/main.scss */
+.player .l_leg {
+  left: 45px;
+}
+/* line 97, ../../app/styles/main.scss */
+.player .r_leg {
+  right: 45px;
+}
