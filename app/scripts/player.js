@@ -3,13 +3,15 @@
 define(['controls'], function(controls) {
 
   var PLAYER_SPEED = 300;
-  var JUMP_VELOCITY = 1000;
+  var JUMP_VELOCITY = 1100;
   var GRAVITY = 2500;
   var EDGE_OF_LIFE = 650; // DUM DUM DUM!
   var COIN_HIT_Y = -50;
   var COIN_HIT_DIST = 60;
 
   var transform = $.fx.cssPrefix + 'transform';
+
+
 
   var Player = function(el, game) {
     this.el = el;
@@ -28,7 +30,10 @@ define(['controls'], function(controls) {
     }
   };
 
+
+
   Player.prototype.onFrame = function(delta) {
+
 
     // Player input
     this.vel.x = controls.inputVec.x * PLAYER_SPEED;
@@ -62,11 +67,12 @@ define(['controls'], function(controls) {
       if (p.rect.y >= oldY && p.rect.y < pos.y) {
 
         // Is our X within platform width
-        if (pos.x > p.rect.x && pos.x < p.rect.right) {
+        if (pos.x > p.rect.x-15 && pos.x < p.rect.right+15) {
 
           // Collision. Let's stop gravity.
           pos.y = p.rect.y;
           vel.y = 0;
+          vel.y = -JUMP_VELOCITY;
         }
       }
     });

@@ -25,11 +25,11 @@ html {
 
 .coin {
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   margin-left: -16px;
   margin-top: -16px;
-  background: url('images/coin.gif') no-repeat;
+  background: url('../images/banana.png') no-repeat;
 }
 
 .scoreboard {
@@ -60,6 +60,14 @@ html {
 
   div {margin: 0; padding: 0;}
   div div {background: #A4CA39; position: relative;}
+
+  .pumba{
+    background: url('../images/pumba.png') no-repeat;
+  }
+
+  .pumbafall{
+    background: url('../images/pumba2.png') no-repeat;
+  }
 
   .android{
     height: 404px; width: 336px;

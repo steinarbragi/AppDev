@@ -4,6 +4,12 @@ define(['controls', 'player', 'platform', 'coin'], function(controls, Player, Pl
 
   var transform = $.fx.cssPrefix + 'transform';
 
+
+  //to get a random integer in a range from min to max (for platform postioning)
+  function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
   // How far from each edge should the player be.
   var VIEWPORT_PADDING = 100;
 
@@ -18,18 +24,20 @@ define(['controls', 'player', 'platform', 'coin'], function(controls, Player, Pl
     this.platformsEl = el.find('.platforms');
     this.coinsEl = el.find('.coins');
     this.scoreEl = el.find('.score .value');
+    this.scoreTotal = 0;
+    this.heightReached = 0;
 
     this.entities = [];
     this.player = new Player(this.el.find('.player'), this);
 
-    this.sound = new Howl({
+    /*this.sound = new Howl({
       urls: ['sounds/main.mp3', 'sounds/main.ogg'],
       sprite: {
         blast: [0, 2000],
         laser: [3000, 700],
         winner: [5000, 9000]
       }
-    });
+    });*/
     
     // Cache a bound onFrame since we need it each frame.
     this.onFrame = this.onFrame.bind(this);
@@ -59,6 +67,38 @@ define(['controls', 'player', 'platform', 'coin'], function(controls, Player, Pl
 
   Game.prototype.createWorld = function() {
     // Ground.
+
+    for(var i = 0; i<300; i++)
+    {
+
+      var thetype = "normal";
+      if (getRandomInt(60, 400) == 1)
+        thetype='move';
+      
+
+
+      this.addPlatform(new Platform({
+      x: getRandomInt(100, 600),
+      y: 300 - (i*100),
+      width: getRandomInt(60, 400),
+      height: 10,
+      type: thetype
+    }));
+    }
+
+
+    for(var j = 0; j<30; j++)
+    {
+
+      this.addCoin(new Coin({
+      x: getRandomInt(100, 600),
+      y: 250 - (j*100*getRandomInt(1,10))
+      }));
+ 
+
+    }
+
+    //ground
     this.addPlatform(new Platform({
       x: 100,
       y: 418,
@@ -66,55 +106,7 @@ define(['controls', 'player', 'platform', 'coin'], function(controls, Player, Pl
       height: 10
     }));
 
-    // Floating platforms
-    this.addPlatform(new Platform({
-      x: 300,
-      y: 258,
-      width: 100,
-      height: 10
-    }));
-    this.addPlatform(new Platform({
-      x: 500,
-      y: 288,
-      width: 100,
-      height: 10
-    }));
-    this.addPlatform(new Platform({
-      x: 400,
-      y: 158,
-      width: 100,
-      height: 10
-    }));
-    this.addPlatform(new Platform({
-      x: 750,
-      y: 188,
-      width: 100,
-      height: 10
-    }));
-
-
-    this.addPlatform(new Platform({
-      x: 400,
-      y: 100,
-      width: 100,
-      height: 10
-    }));
-    this.addPlatform(new Platform({
-      x: 750,
-      y: 0,
-      width: 100,
-      height: 10
-    }));
-
-    // Coins
-    this.addCoin(new Coin({
-      x: 770,
-      y: 80
-    }));
-    this.addCoin(new Coin({
-      x: 820,
-      y: 80
-    }));
+  
   };
 
   Game.prototype.addPlatform = function(platform) {
@@ -129,9 +121,11 @@ define(['controls', 'player', 'platform', 'coin'], function(controls, Player, Pl
 
   Game.prototype.hitCoin = function(coin) {
     this.collectedCoins++;
-    this.scoreEl.text(this.collectedCoins);
+    this.scoreTotal += 100;
+    this.scoreEl.text(Math.round(this.scoreTotal+this.heightReached/10));
     coin.hit();
   };
+
 
   Game.prototype.forEachPlatform = function(fun) {
     for (var i = 0, e; e = this.entities[i]; i++) {
@@ -172,6 +166,13 @@ define(['controls', 'player', 'platform', 'coin'], function(controls, Player, Pl
       }
     }
 
+
+    //update the score by max height reached
+    if((1-this.player.pos.y + 417)>this.heightReached)
+    {
+      this.heightReached = (1-this.player.pos.y + 417)
+      this.scoreEl.text(Math.round(this.scoreTotal+this.heightReached/10));
+    }
     this.updateViewport();
 
     // Request next frame.
@@ -191,9 +192,10 @@ define(['controls', 'player', 'platform', 'coin'], function(controls, Player, Pl
       this.viewport.y = playerY + VIEWPORT_PADDING - this.viewport.height;
     }
 
+
     // Let's not go outside the level.
     // TODO: Level end?
-    //4this.viewport.y = Math.max(0, this.viewport.y);
+    // this.viewport.y = Math.max(0, this.viewport.y);
     
     this.worldEl.css(transform, 'translate(0,' + (-this.viewport.y) + 'px)');
 
