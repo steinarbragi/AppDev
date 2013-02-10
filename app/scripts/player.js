@@ -69,7 +69,7 @@ define(['controls'], function(controls) {
         // Is our X within platform width
         if (pos.x > p.rect.x-15 && pos.x < p.rect.right+15) {
 
-          // Collision. Let's stop gravity.
+          // Collision. Let's jump.
           pos.y = p.rect.y;
           vel.y = 0;
           vel.y = -JUMP_VELOCITY;

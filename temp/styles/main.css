@@ -15,7 +15,7 @@ html {
   margin-top: -240px;
 }
 
-/* line 19, ../../app/styles/main.scss */
+/* line 21, ../../app/styles/main.scss */
 .background {
   background: #000000;
   position: absolute;
@@ -23,7 +23,7 @@ html {
   width: 3000px;
 }
 
-/* line 26, ../../app/styles/main.scss */
+/* line 28, ../../app/styles/main.scss */
 .coin {
   position: absolute;
   width: 50px;
@@ -33,7 +33,7 @@ html {
   background: url("../images/banana.png") no-repeat;
 }
 
-/* line 35, ../../app/styles/main.scss */
+/* line 37, ../../app/styles/main.scss */
 .scoreboard {
   position: absolute;
   bottom: 0;
@@ -45,7 +45,7 @@ html {
   color: white;
 }
 
-/* line 46, ../../app/styles/main.scss */
+/* line 48, ../../app/styles/main.scss */
 .platform {
   background-color: #bada55;
   position: absolute;
@@ -56,7 +56,7 @@ html {
   border-radius: 5px;
 }
 
-/* line 52, ../../app/styles/main.scss */
+/* line 54, ../../app/styles/main.scss */
 .player {
   height: 100px;
   left: 0;
@@ -66,25 +66,25 @@ html {
   top: 0;
   width: 84px;
 }
-/* line 61, ../../app/styles/main.scss */
+/* line 63, ../../app/styles/main.scss */
 .player div {
   margin: 0;
   padding: 0;
 }
-/* line 62, ../../app/styles/main.scss */
+/* line 64, ../../app/styles/main.scss */
 .player div div {
   background: #A4CA39;
   position: relative;
 }
-/* line 64, ../../app/styles/main.scss */
+/* line 66, ../../app/styles/main.scss */
 .player .pumba {
   background: url("../images/pumba.png") no-repeat;
 }
-/* line 68, ../../app/styles/main.scss */
+/* line 70, ../../app/styles/main.scss */
 .player .pumbafall {
   background: url("../images/pumba2.png") no-repeat;
 }
-/* line 72, ../../app/styles/main.scss */
+/* line 74, ../../app/styles/main.scss */
 .player .android {
   height: 404px;
   width: 336px;
@@ -99,7 +99,7 @@ html {
   -o-transform: scale(0.248, 0.248);
   transform: scale(0.248, 0.248);
 }
-/* line 78, ../../app/styles/main.scss */
+/* line 80, ../../app/styles/main.scss */
 .player .head {
   width: 220px;
   height: 100px;
@@ -111,7 +111,7 @@ html {
   -o-border-radius: 110px 110px 0 0;
   border-radius: 110px 110px 0 0;
 }
-/* line 85, ../../app/styles/main.scss */
+/* line 87, ../../app/styles/main.scss */
 .player .l_eye, .player .r_eye {
   background: #fff;
   width: 20px;
@@ -124,15 +124,15 @@ html {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 92, ../../app/styles/main.scss */
+/* line 94, ../../app/styles/main.scss */
 .player .l_eye {
   left: 50px;
 }
-/* line 93, ../../app/styles/main.scss */
+/* line 95, ../../app/styles/main.scss */
 .player .r_eye {
   right: 50px;
 }
-/* line 95, ../../app/styles/main.scss */
+/* line 97, ../../app/styles/main.scss */
 .player .l_ant, .player .r_ant {
   width: 6px;
   height: 50px;
@@ -144,7 +144,7 @@ html {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 101, ../../app/styles/main.scss */
+/* line 103, ../../app/styles/main.scss */
 .player .l_ant {
   left: 50px;
   -webkit-transform: rotate(-30deg);
@@ -153,7 +153,7 @@ html {
   -o-transform: rotate(-30deg);
   transform: rotate(-30deg);
 }
-/* line 105, ../../app/styles/main.scss */
+/* line 107, ../../app/styles/main.scss */
 .player .r_ant {
   right: 50px;
   -webkit-transform: rotate(30deg);
@@ -162,7 +162,7 @@ html {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
-/* line 110, ../../app/styles/main.scss */
+/* line 112, ../../app/styles/main.scss */
 .player .body {
   width: 220px;
   height: 184px;
@@ -174,12 +174,12 @@ html {
   -o-border-radius: 0 0 25px 25px;
   border-radius: 0 0 25px 25px;
 }
-/* line 118, ../../app/styles/main.scss */
+/* line 120, ../../app/styles/main.scss */
 .player .l_arm, .player .r_arm, .player .l_leg, .player .r_leg {
   width: 50px;
   position: absolute;
 }
-/* line 121, ../../app/styles/main.scss */
+/* line 123, ../../app/styles/main.scss */
 .player .l_arm, .player .r_arm {
   height: 150px;
   -webkit-transition: all 0.15s;
@@ -192,7 +192,7 @@ html {
   -o-border-radius: 25px;
   border-radius: 25px;
 }
-/* line 126, ../../app/styles/main.scss */
+/* line 128, ../../app/styles/main.scss */
 .player .l_leg, .player .r_leg {
   height: 100px;
   top: 162px;
@@ -207,23 +207,23 @@ html {
   -o-border-radius: 0 0 25px 25px;
   border-radius: 0 0 25px 25px;
 }
-/* line 131, ../../app/styles/main.scss */
+/* line 133, ../../app/styles/main.scss */
 .player .l_arm {
   left: -58px;
 }
-/* line 132, ../../app/styles/main.scss */
+/* line 134, ../../app/styles/main.scss */
 .player .r_arm {
   right: -58px;
 }
-/* line 133, ../../app/styles/main.scss */
+/* line 135, ../../app/styles/main.scss */
 .player .l_leg {
   left: 45px;
 }
-/* line 134, ../../app/styles/main.scss */
+/* line 136, ../../app/styles/main.scss */
 .player .r_leg {
   right: 45px;
 }
-/* line 136, ../../app/styles/main.scss */
+/* line 138, ../../app/styles/main.scss */
 .player.walking .l_leg {
   -webkit-animation: player-walk-left 0.15s linear infinite alternate;
   -moz-animation: player-walk-left 0.15s linear infinite alternate;
@@ -231,7 +231,7 @@ html {
   -o-animation: player-walk-left 0.15s linear infinite alternate;
   animation: player-walk-left 0.15s linear infinite alternate;
 }
-/* line 140, ../../app/styles/main.scss */
+/* line 142, ../../app/styles/main.scss */
 .player.walking .r_leg {
   -webkit-animation: player-walk-right 0.15s 0.15s linear infinite alternate;
   -moz-animation: player-walk-right 0.15s 0.15s linear infinite alternate;
@@ -239,7 +239,7 @@ html {
   -o-animation: player-walk-right 0.15s 0.15s linear infinite alternate;
   animation: player-walk-right 0.15s 0.15s linear infinite alternate;
 }
-/* line 144, ../../app/styles/main.scss */
+/* line 146, ../../app/styles/main.scss */
 .player.jumping .r_arm {
   -webkit-transform-origin: 50% 0;
   -moz-transform-origin: 50% 0;
@@ -254,13 +254,13 @@ html {
 }
 
 @-moz-keyframes player-walk-left {
-  /* line 151, ../../app/styles/main.scss */
+  /* line 153, ../../app/styles/main.scss */
   from {
     -moz-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 154, ../../app/styles/main.scss */
+  /* line 156, ../../app/styles/main.scss */
   to {
     -moz-transform: rotate(30deg);
     transform: rotate(30deg);
@@ -268,13 +268,13 @@ html {
 }
 
 @-webkit-keyframes player-walk-left {
-  /* line 151, ../../app/styles/main.scss */
+  /* line 153, ../../app/styles/main.scss */
   from {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 154, ../../app/styles/main.scss */
+  /* line 156, ../../app/styles/main.scss */
   to {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
@@ -282,13 +282,13 @@ html {
 }
 
 @-o-keyframes player-walk-left {
-  /* line 151, ../../app/styles/main.scss */
+  /* line 153, ../../app/styles/main.scss */
   from {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 154, ../../app/styles/main.scss */
+  /* line 156, ../../app/styles/main.scss */
   to {
     -o-transform: rotate(30deg);
     transform: rotate(30deg);
@@ -296,13 +296,13 @@ html {
 }
 
 @-ms-keyframes player-walk-left {
-  /* line 151, ../../app/styles/main.scss */
+  /* line 153, ../../app/styles/main.scss */
   from {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 154, ../../app/styles/main.scss */
+  /* line 156, ../../app/styles/main.scss */
   to {
     -ms-transform: rotate(30deg);
     transform: rotate(30deg);
@@ -310,25 +310,25 @@ html {
 }
 
 @keyframes player-walk-left {
-  /* line 151, ../../app/styles/main.scss */
+  /* line 153, ../../app/styles/main.scss */
   from {
     transform: rotate(0);
   }
 
-  /* line 154, ../../app/styles/main.scss */
+  /* line 156, ../../app/styles/main.scss */
   to {
     transform: rotate(30deg);
   }
 }
 
 @-moz-keyframes player-walk-right {
-  /* line 160, ../../app/styles/main.scss */
+  /* line 162, ../../app/styles/main.scss */
   from {
     -moz-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 163, ../../app/styles/main.scss */
+  /* line 165, ../../app/styles/main.scss */
   to {
     -moz-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -336,13 +336,13 @@ html {
 }
 
 @-webkit-keyframes player-walk-right {
-  /* line 160, ../../app/styles/main.scss */
+  /* line 162, ../../app/styles/main.scss */
   from {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 163, ../../app/styles/main.scss */
+  /* line 165, ../../app/styles/main.scss */
   to {
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -350,13 +350,13 @@ html {
 }
 
 @-o-keyframes player-walk-right {
-  /* line 160, ../../app/styles/main.scss */
+  /* line 162, ../../app/styles/main.scss */
   from {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 163, ../../app/styles/main.scss */
+  /* line 165, ../../app/styles/main.scss */
   to {
     -o-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -364,13 +364,13 @@ html {
 }
 
 @-ms-keyframes player-walk-right {
-  /* line 160, ../../app/styles/main.scss */
+  /* line 162, ../../app/styles/main.scss */
   from {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
 
-  /* line 163, ../../app/styles/main.scss */
+  /* line 165, ../../app/styles/main.scss */
   to {
     -ms-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -378,12 +378,12 @@ html {
 }
 
 @keyframes player-walk-right {
-  /* line 160, ../../app/styles/main.scss */
+  /* line 162, ../../app/styles/main.scss */
   from {
     transform: rotate(0);
   }
 
-  /* line 163, ../../app/styles/main.scss */
+  /* line 165, ../../app/styles/main.scss */
   to {
     transform: rotate(-30deg);
   }
